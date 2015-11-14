@@ -1,4 +1,73 @@
 body {
+    margin: 0;
+    padding: 0;
+    background: #ccffe5;
+}
+
+.nav ul {
+    list-style: none;
+    background-color: #595959;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    opacity: 0.9;
+}
+.nav li {
+    font-family: Montserrat;
+    font-size: 0.8em;
+    line-height: 20px;
+    height: 20px;
+    border-bottom: 1px solid #888;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: #66FFB2;
+}
+
+.nav a.active {
+    background-color: #00FF7F;
+    color: #444;
+    cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1em;
+    }
+
+    /* Option 1 - Display Inline */
+    .nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+    /* Options 2 - Float
+    .nav li {
+      float: left;
+    }
+    .nav ul {
+      overflow: auto;
+      width: 600px;
+      margin: 0 auto;
+    }
+    .nav {
+      background-color: #444;
+    }
+    */
+}
+
+body  {
     background: url('http://www.3d-hdwallpaper.com/bulk_images/desktop-snake-venom-pictures-wallpaper.jpg') no-repeat fixed center center;
     background-size: cover;
     font-family: Montserrat;

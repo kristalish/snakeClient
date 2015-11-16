@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19669a52-8127-4e8c-9fee-fe3b620cd77f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/account.css" />
-      <change type="DELETED" beforePath="C:\Users\Krista\Documents\snakeClient\admin.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Krista\Documents\snakeClient\css\admin.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Krista\Documents\snakeClient\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Krista\Documents\snakeClient\css\styles.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/account.html" afterPath="$PROJECT_DIR$/account.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/highscore.css" afterPath="$PROJECT_DIR$/css/highscore.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/highscore.html" afterPath="$PROJECT_DIR$/highscore.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/home.css" afterPath="$PROJECT_DIR$/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index-login.css" afterPath="$PROJECT_DIR$/css/index-login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/newGame.css" afterPath="$PROJECT_DIR$/css/newGame.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newGame.html" afterPath="$PROJECT_DIR$/newGame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/signUp.css" afterPath="$PROJECT_DIR$/css/signUp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signUp.html" afterPath="$PROJECT_DIR$/signUp.html" />
+    <list default="true" id="19669a52-8127-4e8c-9fee-fe3b620cd77f" name="Default" comment="flyttet filer&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/account.html" />
+      <change type="DELETED" beforePath="C:\Users\Krista\Documents\snakeClient\account.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Krista\Documents\snakeClient\js\bootstrap.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\Krista\Documents\snakeClient\highscore.html" afterPath="$PROJECT_DIR$/html/highscore.html" />
+      <change type="MOVED" beforePath="C:\Users\Krista\Documents\snakeClient\home.html" afterPath="$PROJECT_DIR$/html/home.html" />
+      <change type="MOVED" beforePath="C:\Users\Krista\Documents\snakeClient\index.html" afterPath="$PROJECT_DIR$/html/index.html" />
+      <change type="MOVED" beforePath="C:\Users\Krista\Documents\snakeClient\newGame.html" afterPath="$PROJECT_DIR$/html/newGame.html" />
+      <change type="MOVED" beforePath="C:\Users\Krista\Documents\snakeClient\signUp.html" afterPath="$PROJECT_DIR$/html/signUp.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled1.iws" />
@@ -38,39 +32,29 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="signUp.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/signUp.html">
+        <entry file="file://$PROJECT_DIR$/html/signUp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27967954">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.4894392">
+              <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="account.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/account.html">
+        <entry file="file://$PROJECT_DIR$/html/account.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.0">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="highscore.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/highscore.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.68421">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.947369">
+              <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home.html">
+        <entry file="file://$PROJECT_DIR$/html/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.087719">
+            <state vertical-scroll-proportion="-16.842106">
               <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding />
             </state>
@@ -78,20 +62,20 @@
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.368421">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state vertical-scroll-proportion="-7.5789475">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="newGame.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newGame.html">
+        <entry file="file://$PROJECT_DIR$/html/newGame.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-16.842106">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+              <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -132,7 +116,6 @@
         <option value="$PROJECT_DIR$/js/Client.js" />
         <option value="$PROJECT_DIR$/highscore.html" />
         <option value="$PROJECT_DIR$/home.html" />
-        <option value="$PROJECT_DIR$/account.html" />
         <option value="$PROJECT_DIR$/css/account.css" />
         <option value="$PROJECT_DIR$/css/highscore.css" />
         <option value="$PROJECT_DIR$/css/home.css" />
@@ -141,6 +124,8 @@
         <option value="$PROJECT_DIR$/css/signUp.css" />
         <option value="$PROJECT_DIR$/newGame.html" />
         <option value="$PROJECT_DIR$/signUp.html" />
+        <option value="$PROJECT_DIR$/account.html" />
+        <option value="$PROJECT_DIR$/html/account.html" />
       </list>
     </option>
   </component>
@@ -210,7 +195,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -250,6 +235,7 @@
       <recent name="C:\Users\Krista\WebstormProjects\untitled1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Krista\Documents\snakeClient\html" />
       <recent name="C:\Users\Krista\WebstormProjects\untitled1\js" />
       <recent name="C:\Users\Krista\WebstormProjects\untitled1\css" />
       <recent name="C:\Users\Krista\WebstormProjects\untitled1" />
@@ -325,7 +311,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447508094634</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tilrettet alle filer, og knyttet de korrekte stylesheets til de korrekte klasser">
+      <created>1447671094481</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1447671094481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -375,14 +367,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hi" />
     <MESSAGE value="oprettet adskillige filer til de forskellige sider, samt css implemtering, og lidt JS" />
-    <option name="LAST_COMMIT_MESSAGE" value="oprettet adskillige filer til de forskellige sider, samt css implemtering, og lidt JS" />
+    <MESSAGE value="tilrettet alle filer, og knyttet de korrekte stylesheets til de korrekte klasser" />
+    <MESSAGE value="flyttet filer&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="flyttet filer&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/signUp.html">
+    <entry file="file://$PROJECT_DIR$/html/signUp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -398,7 +392,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="9" />
@@ -422,7 +416,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signUp.html">
+    <entry file="file://$PROJECT_DIR$/html/signUp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -438,7 +432,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="9" />
@@ -462,7 +456,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signUp.html">
+    <entry file="file://$PROJECT_DIR$/html/signUp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -470,7 +464,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="9" />
@@ -494,7 +488,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signUp.html">
+    <entry file="file://$PROJECT_DIR$/html/signUp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -518,7 +512,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="85" selection-start-line="22" selection-start-column="85" selection-end-line="22" selection-end-column="85" />
@@ -531,13 +525,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -604,50 +591,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/account.html">
+    <entry file="file://$PROJECT_DIR$/html/highscore.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.34959942">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/highscore.html">
+    <entry file="file://$PROJECT_DIR$/html/account.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.68421">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.947369">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
+    <entry file="file://$PROJECT_DIR$/html/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.087719">
+        <state vertical-scroll-proportion="-16.842106">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.368421">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state vertical-scroll-proportion="-7.5789475">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newGame.html">
+    <entry file="file://$PROJECT_DIR$/html/newGame.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.842106">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/signUp.html">
+    <entry file="file://$PROJECT_DIR$/html/signUp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27967954">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.4894392">
+          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
           <folding />
         </state>
       </provider>

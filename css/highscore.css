@@ -2,9 +2,74 @@ body {
     background: url('http://www.3d-hdwallpaper.com/bulk_images/desktop-snake-venom-pictures-wallpaper.jpg') no-repeat fixed center center;
     background-size: cover;
     font-family: Montserrat;
+    margin: 0;
+    padding: 0;
 }
 
-.home-block {
+.nav ul {
+    list-style: none;
+    background-color: #595959;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    opacity: 0.9;
+}
+.nav li {
+    font-family: Montserrat;
+    font-size: 0.8em;
+    line-height: 20px;
+    height: 20px;
+    border-bottom: 1px solid #888;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    background-color: #66FFB2;
+}
+
+.nav a.active {
+    background-color: #00FF7F;
+    color: #444;
+    cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+    .nav li {
+        width: 120px;
+        border-bottom: none;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1em;
+    }
+
+    /* Option 1 - Display Inline */
+    .nav li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+
+    /* Options 2 - Float
+    .nav li {
+      float: left;
+    }
+    .nav ul {
+      overflow: auto;
+      width: 600px;
+      margin: 0 auto;
+    }
+    .nav {
+      background-color: #444;
+    }
+    */
+}
+
+.highscore-block {
     width: 700px;
     padding: 20px;
     background: #fff;
@@ -13,7 +78,7 @@ body {
     margin: auto;
 }
 
-.home-block h1 {
+.highscore-block h1 {
     text-align: center;
     color: #000;
     font-size: 18px;
@@ -22,7 +87,7 @@ body {
     margin-bottom: 20px;
 }
 
-.home-block input {
+.highscore-block input {
     width: 100%;
     height: 42px;
     box-sizing: border-box;
@@ -37,7 +102,7 @@ body {
 
 
 
-.home-block button {
+.highscore-block button {
     width: 100%;
     height: 40px;
     background: #00FF7F;
@@ -54,7 +119,7 @@ body {
     margin: auto;
 }
 
-.home-block button {
+.highscore-block button {
     width: 100%;
     height: 40px;
     background: #00FF7F;
@@ -71,6 +136,105 @@ body {
     margin: 6px;
 }
 
-.home-block button:hover {
+.highscore-block button:hover {
     background: #66FFB2;
+}
+
+/* table starts here */
+
+.CSSTableGenerator {
+    margin:0px;padding:0px;
+    width:100%;
+    border:1px solid #3f7f00;
+
+    -moz-border-radius-bottomleft:0px;
+    -webkit-border-bottom-left-radius:0px;
+    border-bottom-left-radius:0px;
+
+    -moz-border-radius-bottomright:0px;
+    -webkit-border-bottom-right-radius:0px;
+    border-bottom-right-radius:0px;
+
+    -moz-border-radius-topright:0px;
+    -webkit-border-top-right-radius:0px;
+    border-top-right-radius:0px;
+
+    -moz-border-radius-topleft:0px;
+    -webkit-border-top-left-radius:0px;
+    border-top-left-radius:0px;
+}.CSSTableGenerator table{
+     border-collapse: collapse;
+     border-spacing: 0;
+     width:100%;
+     height:100%;
+     margin:0px;padding:0px;
+ }.CSSTableGenerator tr:last-child td:last-child {
+      -moz-border-radius-bottomright:0px;
+      -webkit-border-bottom-right-radius:0px;
+      border-bottom-right-radius:0px;
+  }
+.CSSTableGenerator table tr:first-child td:first-child {
+    -moz-border-radius-topleft:0px;
+    -webkit-border-top-left-radius:0px;
+    border-top-left-radius:0px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+    -moz-border-radius-topright:0px;
+    -webkit-border-top-right-radius:0px;
+    border-top-right-radius:0px;
+}.CSSTableGenerator tr:last-child td:first-child{
+     -moz-border-radius-bottomleft:0px;
+     -webkit-border-bottom-left-radius:0px;
+     border-bottom-left-radius:0px;
+ }.CSSTableGenerator tr:hover td{
+      background-color:#ffffff;
+
+
+  }
+.CSSTableGenerator td{
+    vertical-align:left;
+
+    background-color:#ffffff;
+
+    border:1px solid #3f7f00;
+    border-width:0px 1px 1px 0px;
+    text-align:left;
+    padding:15px;
+    font-size:12px;
+    font-family: Montserrat;
+    font-weight:normal;
+    color:#000000;
+}.CSSTableGenerator tr:last-child td{
+     border-width:0px 1px 0px 0px;
+ }.CSSTableGenerator tr td:last-child{
+      border-width:0px 0px 1px 0px;
+  }.CSSTableGenerator tr:last-child td:last-child{
+       border-width:0px 0px 0px 0px;
+   }
+.CSSTableGenerator tr:first-child td{
+    background:-o-linear-gradient(bottom, #ffffff 5%, #ffffff 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #ffffff) );
+    background:-moz-linear-gradient( center top, #ffffff 5%, #ffffff 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff");	background: -o-linear-gradient(top,#ffffff,ffffff);
+
+    background-color:#ffffff;
+    border:0px solid #3f7f00;
+    text-align: left;
+    border-width:0px 0px 1px 1px;
+    font-size:15px;
+    font-family: Montserrat;
+    font-weight:bold;
+    color:#000000;
+}
+.CSSTableGenerator tr:first-child:hover td{
+    background:-o-linear-gradient(bottom, #ffffff 5%, #ffffff 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #ffffff) );
+    background:-moz-linear-gradient( center top, #ffffff 5%, #ffffff 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff");	background: -o-linear-gradient(top,#ffffff,ffffff);
+
+    background-color:#ffffff;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+    border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+    border-width:0px 0px 1px 1px;
 }

@@ -1,11 +1,13 @@
-body {
+body  {
     background: url('http://www.3d-hdwallpaper.com/bulk_images/desktop-snake-venom-pictures-wallpaper.jpg') no-repeat fixed center center;
     background-size: cover;
     font-family: Montserrat;
+    margin: 0;
+    padding: 0;
 }
 
 
-.login-block {
+.signup-block {
     width: 320px;
     padding: 20px;
     background: #fff;
@@ -14,7 +16,7 @@ body {
     margin: auto;
 }
 
-.login-block h1 {
+.signup-block h1 {
     text-align: center;
     color: #000;
     font-size: 18px;
@@ -24,7 +26,7 @@ body {
 
 }
 
-.login-block input {
+.signup-block input {
     width: 100%;
     height: 42px;
     box-sizing: border-box;
@@ -37,31 +39,31 @@ body {
     outline: none;
 }
 
-.login-block input#username {
+.signup-block input#username {
     background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px top no-repeat;
     background-size: 16px 80px;
 }
 
-.login-block input#username:focus {
+.signup-block input#username:focus {
     background: #fff url('http://i.imgur.com/u0XmBmv.png') 20px bottom no-repeat;
     background-size: 16px 80px;
 }
 
-.login-block input#password {
+.signup-block input#password {
     background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px top no-repeat;
     background-size: 16px 80px;
 }
 
-.login-block input#password:focus {
+.signup-block input#password:focus {
     background: #fff url('http://i.imgur.com/Qf83FTt.png') 20px bottom no-repeat;
     background-size: 16px 80px;
 }
 
-.login-block input:active, .login-block input:focus {
+.signup-block input:active, .login-block input:focus {
     border: 1px solid #00FF7F;
 }
 
-.login-block button {
+.signup-block button {
     width: 100%;
     height: 40px;
     background: #00FF7F;
@@ -78,7 +80,7 @@ body {
     margin: auto;
 }
 
-.login-block button {
+.signup-block button {
     width: 100%;
     height: 40px;
     background: #00FF7F;
@@ -95,6 +97,6 @@ body {
     margin: 6px;
 }
 
-.login-block button:hover {
+.signup-block button:hover {
     background: #66FFB2;
 }

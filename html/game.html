@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/gameextra.css">
+
+</head>
+<body>
+<div class="background"></div>
+
+    <div class="nav">
+        <ul>
+            <li class="Home"><a href="/html/home.html/">Home</a></li>
+            <li class="Games"><a class="active" href="/game.html/">Games</a></li>
+            <li class="HighScore"><a href="/html/highscore.html/">Highscore</a></li>
+            <li class="Account"><a href="/html/account.html/">Account</a></li>
+            <li class="Log out"><a href="#">Log out</a></li>
+        </ul>
+    </div>
+
+<div class ="container">
+    <div id="arena">
+        <canvas id="grid" width="480" height="480"></canvas><br />
+    </div>
+
+
+
+    <div class="form">
+        <form id="idForm" method="post">
+            <label>Name</label>
+            <input type="text" name="frmGameName" id="frmGameName">
+            <label>Opponent</label>
+            <select name="frmOpponent" id="frmOpponent">
+                <optgroup label="Select Opponent">
+                </optgroup>
+            </select>
+            <input type="hidden" name="frmHost" id="frmHost" value="3">
+            <input type="hidden" name="frmHostControls" id="frmHostControls">
+            <input type="submit" value="Start Game">
+        </form>
+
+    </div><!--#form-->
+
+
+    <div id="movements">
+        Movements <span></span><br />
+        <div class="arrows"></div>
+    </div><!--#movements-->
+
+</div><!--#container-->
+
+
+
+
+
+</div><!--#OVERLAY-->
+</div><!--.game-block-->
+<script src="js/lib/client.js"></script>
+<script src="js/lib/jquery-2.1.4.min.js"></script>
+<script src="js/lib/jquery-ui.min.js"></script>
+</body>
+</html>

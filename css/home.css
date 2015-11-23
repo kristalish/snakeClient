@@ -1,32 +1,11 @@
 body  {
+    background: url('http://www.3d-hdwallpaper.com/bulk_images/desktop-snake-venom-pictures-wallpaper.jpg') no-repeat fixed center center;
+    background-size: cover;
     font-family: Montserrat;
     margin: 0;
     padding: 0;
 }
-.background {
-    position: fixed;
-    margin:0;
-    height: 100%;
-    width:100%;
-    background:
-    linear-gradient(
-            #00ff00,
-            transparent
-    ),
-    linear-gradient(
-            90deg,
-            #66ff66,
-            transparent
-    ),
-    linear-gradient(
-            -90deg,
-            #ffffb3,
-            transparent
-    );
 
-    background-blend-mode: screen;
-    z-index: 0;
-}
 
 .nav ul {
     list-style: none;

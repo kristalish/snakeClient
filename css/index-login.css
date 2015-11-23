@@ -61,7 +61,7 @@ body {
     border: 1px solid #00FF7F;
 }
 
-.login-block button {
+.login-block button, .sign-up-button {
     width: 100%;
     height: 40px;
     background: #00FF7F;
@@ -78,7 +78,7 @@ body {
     margin: auto;
 }
 
-.login-block button {
+.login-block button, .sign-up-button {
     width: 100%;
     height: 40px;
     background: #00FF7F;
@@ -95,6 +95,6 @@ body {
     margin: 6px;
 }
 
-.login-block button:hover {
+.login-block button:hover, .sign-up-button:hover {
     background: #66FFB2;
 }

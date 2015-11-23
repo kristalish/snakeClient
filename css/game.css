@@ -34,11 +34,11 @@ body  {
     background-color: #66FFB2;
 }
 
-.nav a.active {
+/*.nav a.active {
     background-color: #00FF7F;
     color: #444;
     cursor: default;
-}
+}*/
 
 @media screen and (min-width: 600px) {
     .nav li {
@@ -69,105 +69,57 @@ body  {
     }
     */
 }
-.container {
-    opacity:0;
-    position:absolute;
-    width:1000px;
-    left:50%;
-    top:62%;
-    height:520px;
-    margin-top:-322px;
-    margin-left:-500px;
-    background-color:aliceblue;
-    padding:20px;
-    -webkit-box-shadow: 0px 0px 42px -6px aliceblue;
-    -moz-box-shadow: 0px 0px 42px -6px aliceblue;
-    box-shadow: 0px 0px 42px -6px aliceblue);
-    z-index:1;
+
+.game-block {
+    width: 320px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #00FF7F;
+    margin: auto;
 }
 
-#arena {
-    float:right;
+.game-block h1 {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
-#grid {
-    border-right:1px solid #E0E0E0;
-    border-bottom:1px solid #E0E0E0;
+.game-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
 }
 
-#form {
-    float:left;
-}
-.form form {
 
-}
-.form form label {
-    display:block;
-    width:374px;
-    padding:8px 0 6px 0;
-}
 
-form input {
-    font-family: 'Proxima Nova Light', Arial, sans-serif;
-    padding:7px 10px;
-    border: 1px black;
-    font-size:16pt;
-    margin:5px 0 10px 0;
-    width:360px;
-    border-radius: 6px;
+.game-block button {
+    margin: 0 auto;
+    width: 50%;
+    height: 40px;
+    background: #00FF7F;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #00FF7F;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
 }
 
-form select {
-    -webkit-appearance: menulist-button;
-    font-size: 14px;width:382px; height:40px;
-    margin:5px 0 10px 0;
-    font-family: 'Proxima Nova Light', Arial, sans-serif;
+.game-block button:hover {
+    background: #66FFB2;
 }
-
-form input[type="submit"] {
-    width:380px;
-    position: absolute;
-    padding: 10px 40px;
-    margin: 242px 50px 0 0;
-    border-radius: 6px;
-    font-family: 'Proxima Nova Light', Arial, sans-serif;
-    font-size: 25px;
-    color: aliceblue;
-    background-color: palegreen;
-}
-
-#movements {
-    float:left;
-    width:384px;
-    margin:20px 0 0 0;
-}
-
-#notification {
-    position:absolute;
-    text-align:center;
-    top:20px;
-    left:50%;
-    margin-left:-500px;
-    width:1000px;
-    font-size:16pt;
-}
-
-#arrows {
-    margin:0 0 0 4px;
-}
-.arrowUp, .arrowRight, .arrowDown, .arrowLeft {
-    float:left;
-    width:7px;
-    height:7px;
-    border-right-width: 5px;
-    border-bottom-width: 5px;
-    border-style: solid;
-    margin:12px 8px 0 0;
-
-}
-
-.arrowUp {border-color: #FFBF00;transform: rotate(-135deg);}
-.arrowRight {border-color: #E83F6F;transform: rotate(-45deg);}
-.arrowDown {border-color: #2274A5;transform: rotate(45deg);}
-.arrowLeft {border-color: #32936F;transform: rotate(135deg);}
-

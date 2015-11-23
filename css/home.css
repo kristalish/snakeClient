@@ -34,11 +34,11 @@ body  {
     background-color: #66FFB2;
 }
 
-.nav a.active {
+/*.nav a.active {
     background-color: #00FF7F;
     color: #444;
     cursor: default;
-}
+}*/
 
 @media screen and (min-width: 600px) {
     .nav li {

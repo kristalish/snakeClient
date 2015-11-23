@@ -6,6 +6,8 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/game.css">
     <link rel="stylesheet" href="../css/gameextra.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -21,43 +23,21 @@
         </ul>
     </div>
 
-<div class ="container">
-    <div id="arena">
-        <canvas id="grid" width="480" height="480"></canvas><br />
-    </div>
+<div class="game-block">
+    <h1>Welcome to Snake</h1>
+    <a href="../html/game.html">
+        <button class="btn btn-default btn-block m-t-md new-game">
+            NEW GAME
+        </button>
+    </a>
 
 
-
-    <div class="form">
-        <form id="idForm" method="post">
-            <label>Name</label>
-            <input type="text" name="frmGameName" id="frmGameName">
-            <label>Opponent</label>
-            <select name="frmOpponent" id="frmOpponent">
-                <optgroup label="Select Opponent">
-                </optgroup>
-            </select>
-            <input type="hidden" name="frmHost" id="frmHost" value="3">
-            <input type="hidden" name="frmHostControls" id="frmHostControls">
-            <input type="submit" value="Start Game">
-        </form>
-
-    </div><!--#form-->
-
-
-    <div id="movements">
-        Movements <span></span><br />
-        <div class="arrows"></div>
-    </div><!--#movements-->
-
-</div><!--#container-->
-
-
-
-
-
-</div><!--#OVERLAY-->
-</div><!--.game-block-->
+    <p>
+        <textarea name="text" cols="25" rows="5">
+a,s,d,w
+</textarea>
+    </p>
+</div>
 <script src="js/lib/client.js"></script>
 <script src="js/lib/jquery-2.1.4.min.js"></script>
 <script src="js/lib/jquery-ui.min.js"></script>

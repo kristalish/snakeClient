@@ -37,31 +37,37 @@ $(".submit-button").click(function(){
 
         }
     });
-
-
     });
-
-
-
 });
 
 
+$(".create-user").click(function(){
 
-/*$(".sign-up-button").click(function(){
-
+    var Firstname =$('#firstName').val();
+    var Lastname =$('#lastName').val();
+    var Email =$('#email').val();
+    var Username = $('#username').val();
+    var Password = $('#password').val();
+    var user = {
+        firstName: Firstname,
+        lastName: Lastname,
+        email: Email,
+        username: Username,
+        password: Password
+    };
 
     $.ajax({
         type: 'POST',
-        url: 'http://localhost:8888/api/login/',
-        data: { username: $('#username').val(), password: $('#password').val() },
+        url: 'http://localhost:8888/api/users',
+        data: JSON.stringify(user),
         beforeSend:function(){
             // this is where we append a loading image
             $('form').append('loader');
         },
         success:function(data){
             // successful request; do something with the data
-            alert('Du er nu logged ind');
-            window.location.href = '../html/signUp.html';
+            alert('Ny user bum');
+            window.location.href = '../html/home.html';
         },
         error:function(){
             // failed request; give feedback to user
@@ -70,8 +76,6 @@ $(".submit-button").click(function(){
 
         }
     });
+});
 
-
-
-});*/
 

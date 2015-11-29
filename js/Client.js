@@ -27,8 +27,9 @@ $(".submit-button").click(function(){
         },
         success:function(data){
             // successful request; do something with the data
-            alert('Du er nu logged ind');
-            window.location.href = '../html/home.html';
+            $.session.set('userId', data.userid)
+
+           window.location.href = '../html/home.html';
         },
         error:function(){
             // failed request; give feedback to user
@@ -37,8 +38,9 @@ $(".submit-button").click(function(){
 
         }
     });
+
     });
-});
+
 
 
 $(".create-user").click(function(){
@@ -76,6 +78,77 @@ $(".create-user").click(function(){
 
         }
     });
+
+
+});
+//click function that creates the game. variables name, opponent and host are
+$(".create-game").click(function(){
+
+    var createGame = {
+        name: $('#name').val(),
+        opponent: {
+            id: $('#opponent').val()
+        },
+        host: {
+            id: $.session.get('userId'),
+            controls: $('#host').val()
+        }
+    };
+
+
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost:8888/api/games',
+        data: JSON.stringify(createGame),
+        beforeSend:function(){
+            // this is where we append a loading image
+            $('form').append('loader');
+        },
+        success:function(data){
+            // successful request; do something with the data
+            alert('Ny user bum');
+            /*window.location.href = '../html/home.html';*/
+        },
+        error:function(){
+            // failed request; give feedback to user
+
+            alert('Der skete en fejl');
+
+        }
+    });
+
+
+});
+
+
+
+
+
+var options = $("#opponentlist");
+
+    $.ajax({
+        type: 'GET',
+        url: 'http://localhost:8888/api/users',
+        beforeSend:function(){
+            // this is where we append a loading image
+            $('form').append('loader');
+        },
+        success:function(data){
+            // successful request; show all users from an array in a select box
+            $.each(data, function() {
+                options.append("<option>"+this.username+"</option>");
+            });
+        },
+        error:function(){
+            // failed request; give feedback to user
+
+            alert('Der skete en fejl');
+
+        }
+    });
+
+
+
 });
 
 

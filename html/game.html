@@ -25,11 +25,20 @@
 
 <div class="game-block">
     <h1>Welcome to Snake</h1>
-    <a href="../html/game.html">
-        <button class="btn btn-default btn-block m-t-md new-game">
-            NEW GAME
+
+    <input type="text" value="" placeholder="Game Name" id="gameName"/>
+    <p>
+        <select id="opponentlist">
+            <option value="option">Select User</option>
+        </select>
+    </p>
+    <input type="text" value="" placeholder="Controls" id="controls"/>
+
+        <button class="btn btn-default btn-block m-t-md create-game">
+            CREATE GAME
         </button>
-    </a>
+
+
 
 
     <p>
@@ -38,8 +47,10 @@ a,s,d,w
 </textarea>
     </p>
 </div>
-<script src="js/lib/client.js"></script>
-<script src="js/lib/jquery-2.1.4.min.js"></script>
-<script src="js/lib/jquery-ui.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> <!--vælger en adresse på nettet, for at gøre programmet hurtigere-->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="../js/session.js"></script>
+<script src="../js/Client.js"></script>
 </body>
 </html>

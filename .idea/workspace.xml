@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19669a52-8127-4e8c-9fee-fe3b620cd77f" name="Default" comment="1. integreret databasen i game.html så brugeren kan vælge en modstander&#10;2. sat en session key, således at browseren husker hvem der er logget ind.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/creategame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/joingame.html" />
-      <change type="MOVED" beforePath="C:\Users\Krista\Documents\snakeClient\html\game.html" afterPath="$PROJECT_DIR$/html/games.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Client.js" afterPath="$PROJECT_DIR$/js/Client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/account.html" afterPath="$PROJECT_DIR$/html/account.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/highscore.html" afterPath="$PROJECT_DIR$/html/highscore.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/home.html" afterPath="$PROJECT_DIR$/html/home.html" />
+    <list default="true" id="19669a52-8127-4e8c-9fee-fe3b620cd77f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled1.iws" />
@@ -438,7 +431,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448798837327</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="rettelser af create game, tilføjet nye sider.">
+      <created>1448879058147</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1448879058147</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -494,7 +493,8 @@
     <MESSAGE value="implementeret login funktion DER VIRKER. knyttet links til alle knapper." />
     <MESSAGE value="lavet create user" />
     <MESSAGE value="1. integreret databasen i game.html så brugeren kan vælge en modstander&#10;2. sat en session key, således at browseren husker hvem der er logget ind.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. integreret databasen i game.html så brugeren kan vælge en modstander&#10;2. sat en session key, således at browseren husker hvem der er logget ind.&#10;" />
+    <MESSAGE value="rettelser af create game, tilføjet nye sider." />
+    <option name="LAST_COMMIT_MESSAGE" value="rettelser af create game, tilføjet nye sider." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

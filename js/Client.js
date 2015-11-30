@@ -4,142 +4,150 @@
 
 $(document).ready(function () {
 
-/*
-jQuery form for login via username or cbs mail
-*/
+    /*
+     jQuery form for login via username
+     */
 
-$(".submit-button").click(function(){
+    $(".submit-button").click(function () {
 
-    var Username = $('#username').val();
-    var Password = $('#password').val();
-    var user = {
-        username: Username,
-        password: Password
-    };
+        var Username = $('#username').val();
+        var Password = $('#password').val();
+        var user = {
+            username: Username,
+            password: Password
+        };
 
-    $.ajax({
-        type: 'POST',
-        url: 'http://localhost:8888/api/login',
-        data: JSON.stringify(user),
-        beforeSend:function(){
-            // this is where we append a loading image
-            $('form').append('loader');
-        },
-        success:function(data){
-            // successful request; do something with the data
-            $.session.set('userId', data.userid)
+        /*
+         ajax call for the database
+         */
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:8888/api/login',
+            data: JSON.stringify(user),
+            beforeSend: function () {
+                // this is where we append a loading image
+                $('form').append('loader');
+            },
+            success: function (data) {
+                // successful request; do something with the data
+                $.session.set('userId', data.userid)
 
-           window.location.href = '../html/home.html';
-        },
-        error:function(){
-            // failed request; give feedback to user
+                window.location.href = '../html/home.html';
+            },
+            error: function () {
+                // failed request; give feedback to user
 
-            alert('Der skete en fejl');
+                alert('Der skete en fejl');
 
-        }
-    });
+            }
+        });
 
-    });
-
-
-
-$(".create-user").click(function(){
-
-    var Firstname =$('#firstName').val();
-    var Lastname =$('#lastName').val();
-    var Email =$('#email').val();
-    var Username = $('#username').val();
-    var Password = $('#password').val();
-    var user = {
-        firstName: Firstname,
-        lastName: Lastname,
-        email: Email,
-        username: Username,
-        password: Password
-    };
-
-    $.ajax({
-        type: 'POST',
-        url: 'http://localhost:8888/api/users',
-        data: JSON.stringify(user),
-        beforeSend:function(){
-            // this is where we append a loading image
-            $('form').append('loader');
-        },
-        success:function(data){
-            // successful request; do something with the data
-            alert('Ny user bum');
-            window.location.href = '../html/home.html';
-        },
-        error:function(){
-            // failed request; give feedback to user
-
-            alert('Der skete en fejl');
-
-        }
     });
 
 
-});
+    /*
+     Jquery form to create a new user
+     */
+    $(".create-user").click(function () {
+
+        var Firstname = $('#firstName').val();
+        var Lastname = $('#lastName').val();
+        var Email = $('#email').val();
+        var Username = $('#username').val();
+        var Password = $('#password').val();
+        var user = {
+            firstName: Firstname,
+            lastName: Lastname,
+            email: Email,
+            username: Username,
+            password: Password
+        };
+        /*
+         ajax call for the database
+         */
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:8888/api/users',
+            data: JSON.stringify(user),
+            beforeSend: function () {
+                // this is where we append a loading image
+                $('form').append('loader');
+            },
+            success: function (data) {
+                // successful request; do something with the data
+                alert('Ny user bum');
+                window.location.href = '../html/home.html';
+            },
+            error: function () {
+                // failed request; give feedback to user
+
+                alert('Der skete en fejl');
+
+            }
+        });
+
+
+    });
 //click function that creates the game. variables name, opponent and host are
-$(".create-game").click(function(){
+    $(".create-game").click(function () {
 
-    var createGame = {
-        name: $('#name').val(),
-        opponent: {
-            id: $('#opponent').val()
-        },
-        host: {
-            id: $.session.get('userId'),
-            controls: $('#host').val()
-        }
-    };
+        var createGame = {
+            name: $('#gameName').val(),
+            opponent: {
+                id: $('#opponent').val()
+            },
+            host: {
+                id: $.session.get('userId'),
+                controls: $('#controls').val()
+            }
+        };
 
 
-    $.ajax({
-        type: 'POST',
-        url: 'http://localhost:8888/api/games',
-        data: JSON.stringify(createGame),
-        beforeSend:function(){
-            // this is where we append a loading image
-            $('form').append('loader');
-        },
-        success:function(data){
-            // successful request; do something with the data
-            alert('Ny user bum');
-            /*window.location.href = '../html/home.html';*/
-        },
-        error:function(){
-            // failed request; give feedback to user
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:8888/api/games',
+            data: JSON.stringify(createGame),
+            beforeSend: function () {
+                // this is where we append a loading image
+                $('form').append('loader');
+            },
+            success: function (data) {
+                // successful request; do something with the data
+                alert('Congratulations, you have created a new game');
+                /*window.location.href = '../html/home.html';*/
+            },
+            error: function () {
+                // failed request; give feedback to user
 
-            alert('Der skete en fejl');
+                alert('Der skete en fejl');
 
-        }
+            }
+        });
+
+
     });
 
 
-});
-
-
-
-
-
-var options = $("#opponentlist");
+    /*
+     dropdown that lists all the users in the database. the users chooses the opponent
+     */
+    var options = $("#opponent");
 
     $.ajax({
         type: 'GET',
         url: 'http://localhost:8888/api/users',
-        beforeSend:function(){
+        beforeSend: function () {
             // this is where we append a loading image
             $('form').append('loader');
         },
-        success:function(data){
+        success: function (data) {
             // successful request; show all users from an array in a select box
-            $.each(data, function() {
-                options.append("<option>"+this.username+"</option>");
+            $.each(data, function () {
+                options.append("<option value=" + this.id + ">" + this.username + "</option>");
+                // console.log(this)
             });
         },
-        error:function(){
+        error: function () {
             // failed request; give feedback to user
 
             alert('Der skete en fejl');
@@ -148,7 +156,4 @@ var options = $("#opponentlist");
     });
 
 
-
 });
-
-

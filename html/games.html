@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Game</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/gameextra.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </head>
-<header>
+<body>
+
+
+
+
     <div class="nav">
         <ul>
             <li class="Home"><a href="../html/home.html">Home</a></li>
@@ -14,14 +24,24 @@
             <li class="Log out"><a href="../html/index.html">Log out</a></li>
         </ul>
     </div>
-</header>
-<body>
-<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="../css/account.css">
 
-<div class="account-block">
-    <h1>ACCOUNT SETTINGS</h1> <!-- her skal laves en dropdown med en liste af games der skal kunne slettes-->
-    <button class="delete-game">DELETE GAME</button>
+<div class="game-block">
+    <h1>Welcome to Snake</h1>
+
+    <a href="../html/creategame.html">
+        <button class="btn btn-default btn-block m-t-md create-button">
+            Create Game
+        </button>
+    </a>
+<p>
+    <a href="../html/joingame.html">
+        <button class="btn btn-default btn-block m-t-md join-button">
+            Join Game
+        </button>
+    </a>
+</p>
+
+
 </div>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> <!--vælger en adresse på nettet, for at gøre programmet hurtigere-->
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>

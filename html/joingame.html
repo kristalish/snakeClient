@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/gameextra.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="nav">
+    <ul>
+        <li class="Home"><a href="../html/home.html">Home</a></li>
+        <li class="Games"><a class="active" href="../html/games.html">Games</a></li>
+        <li class="HighScore"><a href="../html/highscore.html">Highscore</a></li>
+        <li class="Account"><a href="../html/account.html">Account</a></li>
+        <li class="Log out"><a href="../html/index.html">Log out</a></li>
+    </ul>
+</div>
+
+<div class="game-block">
+    <h1>Welcome to Snake</h1>
+
+    <p>
+        <select id="name">
+            <option value="option">Select Game</option>
+        </select>
+    </p>
+    <input type="text" value="" placeholder="Controls" id="controls"/>
+
+    <button class="btn btn-default btn-block m-t-md join-game">
+        SEND MOVES
+    </button>
+
+
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> <!--vælger en adresse på nettet, for at gøre programmet hurtigere-->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="../js/session.js"></script>
+<script src="../js/Client.js"></script>
+</body>
+</html>

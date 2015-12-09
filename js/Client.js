@@ -10,11 +10,9 @@ $(document).ready(function () {
 
     $(".submit-button").click(function () {
 
-        var Username = $('#username').val();
-        var Password = $('#password').val();
         var user = {
-            username: Username,
-            password: Password
+            username: $('#username').val(),
+            password: $('#password').val()
         };
 
         /*
@@ -24,19 +22,19 @@ $(document).ready(function () {
             type: 'POST',
             url: 'http://localhost:8888/api/login',
             data: JSON.stringify(user),
-            beforeSend: function () {
+            beforeSend:function(){
                 // this is where we append a loading image
-                $('form').append('loader');
+                $('.myLoadingImage').css("display", "block");
             },
             success: function (data) {
                 // successful request; do something with the data
                 $.session.set('userId', data.userid);
-
+                $('.myLoadingImage').css("display", "none");
                 window.location.href = '../html/home.html';
             },
             error: function () {
                 // failed request; give feedback to user
-
+                $('.myLoadingImage').css("display", "none");
                 alert('Der skete en fejl');
 
             }
@@ -50,18 +48,14 @@ $(document).ready(function () {
      */
     $(".create-user").click(function () {
 
-        var Firstname = $('#firstName').val();
-        var Lastname = $('#lastName').val();
-        var Email = $('#email').val();
-        var Username = $('#username').val();
-        var Password = $('#password').val();
         var user = {
-            firstName: Firstname,
-            lastName: Lastname,
-            email: Email,
-            username: Username,
-            password: Password
+            firstName: $('#firstName').val(),
+            lastName: $('#lastName').val(),
+            email: $('#email').val(),
+            username: $('#username').val(),
+            password: $('#password').val()
         };
+
         /*
          ajax call for the database
          */
@@ -76,7 +70,7 @@ $(document).ready(function () {
             success: function (data) {
                 // successful request; do something with the data
                 alert('Ny user bum');
-                window.location.href = '../html/home.html';
+                window.location.href = '../html/index.html';
             },
             error: function () {
                 // failed request; give feedback to user
@@ -88,7 +82,7 @@ $(document).ready(function () {
 
 
     });
-//click function that creates the game. variables name, opponent and host are
+//click function that creates the game. variables name, opponent and host are declared in a createGame
     $(".create-game").click(function () {
 
         var createGame = {
@@ -100,7 +94,7 @@ $(document).ready(function () {
             host: {
                 id: $.session.get('userId'),
                 controls: $('#controls').val()
-            },
+            }
         };
 
 
@@ -115,7 +109,7 @@ $(document).ready(function () {
             success: function (data) {
                 // successful request; do something with the data
                 alert('Congratulations, you have created a new game');
-                /*window.location.href = '../html/home.html';*/
+                window.location.href = '../html/games.html';
             },
             error: function () {
                 // failed request; give feedback to user
@@ -229,6 +223,7 @@ $(".join-game").click(function () {
 
 /*
  Start game function
+ Declaring the varible that AJAX will send to the server
  */
 $(".start-game").click(function () {
 
@@ -260,8 +255,25 @@ $(".start-game").click(function () {
         }
     });
 
-
 });
+
+/*
+AJAX kald til serveren. Henter de ti højeste scores.
+ */
+$.ajax({
+    type: 'GET',
+    url: 'http://localhost:8888/api/scores',
+
+    success: function (data) {
+
+        data.forEach(function (item) {
+            var highscore =
+                "<tr><td>" + item.user.username + "</td><td>" + item.game.gameId + "</td><td>" + item.score + "</td></tr>";
+            $('.highscore').append(highscore);
+        })
+    }
+});
+
 
 
 

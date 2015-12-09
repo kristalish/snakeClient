@@ -268,14 +268,17 @@ AJAX kald til serveren. Henter de ti højeste scores.
 $.ajax({
     type: 'GET',
     url: 'http://localhost:8888/api/scores',
-
     success: function (data) {
-
+        // successful request; do something with the data
         data.forEach(function (item) {
             var highscore =
                 "<tr><td>" + item.user.username + "</td><td>" + item.game.gameId + "</td><td>" + item.score + "</td></tr>";
             $('.highscore').append(highscore);
         })
+    },
+    error: function (){
+        // failed request; give feedback to user
+        alert('Der skete en fejl');
     }
 });
 

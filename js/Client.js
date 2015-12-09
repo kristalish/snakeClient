@@ -63,18 +63,19 @@ $(document).ready(function () {
             type: 'POST',
             url: 'http://localhost:8888/api/users',
             data: JSON.stringify(user),
-            beforeSend: function () {
+            beforeSend:function(){
                 // this is where we append a loading image
-                $('form').append('loader');
+                $('.myLoadingImage').css("display", "block");
             },
             success: function (data) {
                 // successful request; do something with the data
+                $('.myLoadingImage').css("display", "none");
                 alert('Ny user bum');
                 window.location.href = '../html/index.html';
             },
             error: function () {
                 // failed request; give feedback to user
-
+                $('.myLoadingImage').css("display", "none");
                 alert('Der skete en fejl');
 
             }
@@ -102,18 +103,19 @@ $(document).ready(function () {
             type: 'POST',
             url: 'http://localhost:8888/api/games',
             data: JSON.stringify(createGame),
-            beforeSend: function () {
+            beforeSend:function(){
                 // this is where we append a loading image
-                $('form').append('loader');
+                $('.myLoadingImage').css("display", "block");
             },
             success: function (data) {
                 // successful request; do something with the data
+                $('.myLoadingImage').css("display", "none");
                 alert('Congratulations, you have created a new game');
                 window.location.href = '../html/games.html';
             },
             error: function () {
                 // failed request; give feedback to user
-
+                $('.myLoadingImage').css("display", "none");
                 alert('Der skete en fejl');
 
             }
@@ -164,18 +166,19 @@ $(".deleteGame").click(function () {
         type: 'POST',
         url: 'http://localhost:8888/api/games/' + gameid,
         data: JSON.stringify(gameid),
-        beforeSend: function () {
+        beforeSend:function(){
             // this is where we append a loading image
-            $('form').append('loader');
+            $('.myLoadingImage').css("display", "block");
         },
         success: function (data) {
             // successful request; do something with the data
+            $('.myLoadingImage').css("display", "none");
             alert('Game deleted');
             /*window.location.href = '../html/home.html';*/
         },
         error: function () {
             // failed request; give feedback to user
-
+            $('.myLoadingImage').css("display", "none");
             alert('Der skete en fejl');
 
         }
@@ -202,17 +205,18 @@ $(".join-game").click(function () {
         type: 'POST',
         url: 'http://localhost:8888/api/games/join/',
         data: JSON.stringify(joinGame),
-        beforeSend: function () {
+        beforeSend:function(){
             // this is where we append a loading image
-            $('form').append('loader');
+            $('.myLoadingImage').css("display", "block");
         },
         success: function (data) {
             // successful request; do something with the data
+            $('.myLoadingImage').css("display", "none");
             alert('Congratulations, you have joined game');
         },
         error: function () {
             // failed request; give feedback to user
-
+            $('.myLoadingImage').css("display", "none");
             alert('Der skete en fejl');
 
         }
@@ -239,17 +243,18 @@ $(".start-game").click(function () {
         type: 'POST',
         url: 'http://localhost:8888/api/games/start/',
         data: JSON.stringify(startGame),
-        beforeSend: function () {
+        beforeSend:function(){
             // this is where we append a loading image
-            $('form').append('loader');
+            $('.myLoadingImage').css("display", "block");
         },
         success: function (data) {
             // successful request; do something with the data
+            $('.myLoadingImage').css("display", "none");
             alert('Congratulations, you have started game');
         },
         error: function () {
             // failed request; give feedback to user
-
+            $('.myLoadingImage').css("display", "none");
             alert('Der skete en fejl');
 
         }

@@ -123,3 +123,9 @@ body  {
 .game-block button:hover {
     background: #66FFB2;
 }
+
+img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}

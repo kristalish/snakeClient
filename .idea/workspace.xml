@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19669a52-8127-4e8c-9fee-fe3b620cd77f" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Krista\Documents\snakeClient\html\joingame.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Client.js" afterPath="$PROJECT_DIR$/js/Client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/account.html" afterPath="$PROJECT_DIR$/html/account.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/creategame.html" afterPath="$PROJECT_DIR$/html/creategame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/games.html" afterPath="$PROJECT_DIR$/html/games.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/home.html" afterPath="$PROJECT_DIR$/html/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/signUp.html" afterPath="$PROJECT_DIR$/html/signUp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/startgame.html" afterPath="$PROJECT_DIR$/html/startgame.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled1.iws" />
@@ -54,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="games.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="games.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/games.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38455936">
+            <state vertical-scroll-proportion="-9.263158">
               <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding />
             </state>
@@ -86,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Client.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/Client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3239436">
-              <caret line="191" column="10" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.24724062">
+              <caret line="334" column="11" selection-start-line="334" selection-start-column="11" selection-end-line="334" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -182,13 +174,13 @@
         <option value="$PROJECT_DIR$/css/highscore.css" />
         <option value="$PROJECT_DIR$/html/account.html" />
         <option value="$PROJECT_DIR$/html/signUp.html" />
-        <option value="$PROJECT_DIR$/js/Client.js" />
         <option value="$PROJECT_DIR$/html/startgame.html" />
         <option value="$PROJECT_DIR$/html/creategame.html" />
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/html/home.html" />
         <option value="$PROJECT_DIR$/html/joingame.html" />
         <option value="$PROJECT_DIR$/html/games.html" />
+        <option value="$PROJECT_DIR$/js/Client.js" />
       </list>
     </option>
   </component>
@@ -505,7 +497,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449702931917</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="de allersidste rettelser. fjernede en fil: joingame.html der var unødvendig.">
+      <created>1449710489494</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1449710489494</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -566,7 +564,8 @@
     <MESSAGE value="1. lavet highscore - virker&#10;2. lagt en loader ind i login - gif fil af en nyan cat." />
     <MESSAGE value="lagt nyan cat ind forskellige steder.." />
     <MESSAGE value="smårettelser" />
-    <option name="LAST_COMMIT_MESSAGE" value="smårettelser" />
+    <MESSAGE value="de allersidste rettelser. fjernede en fil: joingame.html der var unødvendig." />
+    <option name="LAST_COMMIT_MESSAGE" value="de allersidste rettelser. fjernede en fil: joingame.html der var unødvendig." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -942,14 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3239436">
-          <caret line="191" column="10" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.526316">
@@ -962,8 +953,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/games.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38455936">
+        <state vertical-scroll-proportion="-9.263158">
           <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24724062">
+          <caret line="334" column="11" selection-start-line="334" selection-start-column="11" selection-end-line="334" selection-end-column="11" />
           <folding />
         </state>
       </provider>

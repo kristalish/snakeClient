@@ -174,7 +174,7 @@ $(".deleteGame").click(function () {
             // successful request; do something with the data
             $('.myLoadingImage').css("display", "none");
             alert('Game deleted');
-            /*window.location.href = '../html/home.html';*/
+
         },
         error: function () {
             // failed request; give feedback to user
@@ -213,6 +213,7 @@ $(".join-game").click(function () {
             // successful request; do something with the data
             $('.myLoadingImage').css("display", "none");
             alert('Congratulations, you have joined game');
+            window.location.href = '../html/games.html';
         },
         error: function () {
             // failed request; give feedback to user
@@ -249,8 +250,9 @@ $(".start-game").click(function () {
         },
         success: function (data) {
             // successful request; do something with the data
-            $('.myLoadingImage').css("display", "none");
             alert('Congratulations, you have started game');
+            window.location.href = '../html/games.html';
+
         },
         error: function () {
             // failed request; give feedback to user
